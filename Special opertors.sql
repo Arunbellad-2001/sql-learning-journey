@@ -138,7 +138,33 @@ where name not like '%!_%' escape'!';
 -- EX 1 Display details of whoes name contains at 2nd position 
 select *
 from emp
-where name like '_@_%_' escape'@'
+where name like '_@_%_' escape'@';
+
+-- 7 BETWWEN OPERT
+-- It check whether the value is within specific range 
+-- Syntax
+-- ======================================== 
+-- select column_name
+-- table name
+-- where column_name BETWEEN Value1 and value 2
+
+-- EX 1 Display the all the details of employees salary between 1000 to 3000
+select *
+from emp
+where sal between 1000 and 3000;
+
+-- NOT BETWWEN OPERT
+-- It is used to find the value outside off  range
+
+select *
+from emp
+where sal not between 1000 and 3000;
+
+-- This is all about Special opertors
+-- EX 1 
+
+
+
 
    
 
